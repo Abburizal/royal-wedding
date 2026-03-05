@@ -16,52 +16,47 @@
         </div>
 
         {{-- Two owners --}}
-        <div class="grid md:grid-cols-2 gap-10 lg:gap-16">
+        <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
 
             {{-- Owner 1: Dr. Arifin Amiruddin --}}
-            <div class="flex flex-col items-center text-center">
-                <div class="relative mb-6">
-                    <div class="w-20 h-20 rounded-full overflow-hidden ring-2 ring-gold-500 ring-offset-2 ring-offset-gray-900">
-                        <img src="/images/arifin.jpg"
-                             alt="Dr. Arifin Amiruddin" class="w-full h-full object-cover object-top">
-                    </div>
-                    <div class="absolute -bottom-3 left-1/2 -translate-x-1/2 bg-gold-500 text-white rounded-full px-4 py-1 shadow-luxury whitespace-nowrap">
-                        <p class="text-[10px] font-bold uppercase tracking-wider">Co-Founder</p>
-                    </div>
+            <div class="flex items-start gap-5 bg-white/5 backdrop-blur-sm rounded-2xl p-6 border border-white/10">
+                <div class="flex-shrink-0">
+                    <img src="/images/arifin.jpg"
+                         alt="Dr. Arifin Amiruddin"
+                         class="w-16 h-16 rounded-full object-cover object-top ring-2 ring-gold-500">
                 </div>
-                <p class="text-gold-400 text-[10px] uppercase tracking-[0.3em] mb-2 mt-2">✦ Owner & Director ✦</p>
-                <h2 class="font-serif text-3xl text-white font-bold mb-3">Dr. Arifin Amiruddin</h2>
-                <p class="text-gray-300 text-sm leading-relaxed mb-5">
-                    Visioner di balik konsep luxury wedding Indonesia. Dengan latar belakang manajemen bisnis dan passion mendalam terhadap seni, beliau membangun pondasi The Royal Wedding sebagai standar tertinggi industri pernikahan premium.
-                </p>
-                <div class="flex flex-wrap justify-center gap-2">
-                    <span class="px-3 py-1 bg-gold-500/20 text-gold-400 rounded-full text-xs border border-gold-500/30">✦ Business Strategy</span>
-                    <span class="px-3 py-1 bg-gold-500/20 text-gold-400 rounded-full text-xs border border-gold-500/30">✦ Luxury Concepts</span>
-                    <span class="px-3 py-1 bg-gold-500/20 text-gold-400 rounded-full text-xs border border-gold-500/30">✦ Brand Vision</span>
+                <div class="flex-1 min-w-0">
+                    <p class="text-gold-400 text-[10px] uppercase tracking-widest mb-1">Owner & Director</p>
+                    <h2 class="font-serif text-xl text-white font-bold mb-2 leading-tight">Dr. Arifin Amiruddin</h2>
+                    <p class="text-gray-400 text-xs leading-relaxed mb-3">
+                        Visioner di balik konsep luxury wedding Indonesia. Membangun pondasi The Royal Wedding sebagai standar tertinggi industri pernikahan premium.
+                    </p>
+                    <div class="flex flex-wrap gap-1.5">
+                        <span class="px-2 py-0.5 bg-gold-500/20 text-gold-400 rounded-full text-[10px] border border-gold-500/30">Business Strategy</span>
+                        <span class="px-2 py-0.5 bg-gold-500/20 text-gold-400 rounded-full text-[10px] border border-gold-500/30">Luxury Concepts</span>
+                        <span class="px-2 py-0.5 bg-gold-500/20 text-gold-400 rounded-full text-[10px] border border-gold-500/30">Brand Vision</span>
+                    </div>
                 </div>
             </div>
 
             {{-- Owner 2: Ully Sjah --}}
-            <div class="flex flex-col items-center text-center">
-                <div class="relative mb-6">
-                    <div class="w-20 h-20 rounded-full overflow-hidden ring-2 ring-gold-500 ring-offset-2 ring-offset-gray-900">
-                        <img src="/images/ully.jpg"
-                             alt="Ully Sjah" class="w-full h-full object-cover object-top">
-                    </div>
-                    <div class="absolute -bottom-3 left-1/2 -translate-x-1/2 bg-gold-500 text-white rounded-full px-4 py-1 shadow-luxury whitespace-nowrap">
-                        <p class="text-[10px] font-bold uppercase tracking-wider">8+ Tahun</p>
-                    </div>
+            <div class="flex items-start gap-5 bg-white/5 backdrop-blur-sm rounded-2xl p-6 border border-white/10">
+                <div class="flex-shrink-0">
+                    <img src="/images/ully.jpg"
+                         alt="Ully Sjah"
+                         class="w-16 h-16 rounded-full object-cover object-top ring-2 ring-gold-500">
                 </div>
-                <p class="text-gold-400 text-[10px] uppercase tracking-[0.3em] mb-2 mt-2">✦ Wedding Planner & Founder ✦</p>
-                <h2 class="font-serif text-3xl text-white font-bold mb-3">Ully Sjah</h2>
-                <p class="text-gray-300 text-sm leading-relaxed mb-5">
-                    Dengan lebih dari 8 tahun pengalaman di industri pernikahan premium Indonesia, Ully telah membantu lebih dari 500 pasangan mewujudkan hari paling istimewa dalam hidup mereka. Dari pernikahan intimate hingga grand ballroom 1000 tamu — setiap detail adalah prioritas.
-                </p>
-                <div class="flex flex-wrap justify-center gap-2">
-                    <span class="px-3 py-1 bg-gold-500/20 text-gold-400 rounded-full text-xs border border-gold-500/30">✦ Wedding Planning</span>
-                    <span class="px-3 py-1 bg-gold-500/20 text-gold-400 rounded-full text-xs border border-gold-500/30">✦ Event Design</span>
-                    <span class="px-3 py-1 bg-gold-500/20 text-gold-400 rounded-full text-xs border border-gold-500/30">✦ Vendor Curation</span>
-                    <span class="px-3 py-1 bg-gold-500/20 text-gold-400 rounded-full text-xs border border-gold-500/30">✦ Luxury Events</span>
+                <div class="flex-1 min-w-0">
+                    <p class="text-gold-400 text-[10px] uppercase tracking-widest mb-1">Wedding Planner & Founder</p>
+                    <h2 class="font-serif text-xl text-white font-bold mb-2 leading-tight">Ully Sjah</h2>
+                    <p class="text-gray-400 text-xs leading-relaxed mb-3">
+                        8+ tahun pengalaman di industri pernikahan premium Indonesia. Membantu 500+ pasangan mewujudkan hari paling istimewa — dari intimate wedding hingga grand ballroom.
+                    </p>
+                    <div class="flex flex-wrap gap-1.5">
+                        <span class="px-2 py-0.5 bg-gold-500/20 text-gold-400 rounded-full text-[10px] border border-gold-500/30">Wedding Planning</span>
+                        <span class="px-2 py-0.5 bg-gold-500/20 text-gold-400 rounded-full text-[10px] border border-gold-500/30">Event Design</span>
+                        <span class="px-2 py-0.5 bg-gold-500/20 text-gold-400 rounded-full text-[10px] border border-gold-500/30">Luxury Events</span>
+                    </div>
                 </div>
             </div>
 
