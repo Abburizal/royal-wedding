@@ -20,13 +20,13 @@
 
             {{-- Owner 1: Dr. Arifin Amiruddin --}}
             <div class="flex flex-col items-center text-center">
-                <div class="relative mb-8">
-                    <div class="w-16 h-16 rounded-full overflow-hidden ring-4 ring-gold-500 ring-offset-4 ring-offset-gray-900">
+                <div class="relative mb-6">
+                    <div class="w-20 h-20 rounded-full overflow-hidden ring-2 ring-gold-500 ring-offset-2 ring-offset-gray-900">
                         <img src="/images/arifin.jpg"
                              alt="Dr. Arifin Amiruddin" class="w-full h-full object-cover object-top">
                     </div>
-                    <div class="absolute -bottom-3 left-1/2 -translate-x-1/2 bg-gold-500 text-white rounded-full px-4 py-1 shadow-luxury whitespace-nowrap">
-                        <p class="text-[10px] font-bold uppercase tracking-wider">Co-Founder</p>
+                    <div class="absolute -bottom-2 left-1/2 -translate-x-1/2 bg-gold-500 text-white rounded-full px-2.5 py-0.5 shadow-luxury whitespace-nowrap">
+                        <p class="text-[9px] font-bold uppercase tracking-wide">Co-Founder</p>
                     </div>
                 </div>
                 <p class="text-gold-400 text-[10px] uppercase tracking-[0.3em] mb-2 mt-2">✦ Owner & Director ✦</p>
@@ -43,13 +43,13 @@
 
             {{-- Owner 2: Ully Sjah --}}
             <div class="flex flex-col items-center text-center">
-                <div class="relative mb-8">
-                    <div class="w-16 h-16 rounded-full overflow-hidden ring-4 ring-gold-500 ring-offset-4 ring-offset-gray-900">
+                <div class="relative mb-6">
+                    <div class="w-20 h-20 rounded-full overflow-hidden ring-2 ring-gold-500 ring-offset-2 ring-offset-gray-900">
                         <img src="/images/ully.jpg"
                              alt="Ully Sjah" class="w-full h-full object-cover object-top">
                     </div>
-                    <div class="absolute -bottom-3 left-1/2 -translate-x-1/2 bg-gold-500 text-white rounded-full px-4 py-1 shadow-luxury whitespace-nowrap">
-                        <p class="text-[10px] font-bold uppercase tracking-wider">8+ Tahun</p>
+                    <div class="absolute -bottom-2 left-1/2 -translate-x-1/2 bg-gold-500 text-white rounded-full px-2.5 py-0.5 shadow-luxury whitespace-nowrap">
+                        <p class="text-[9px] font-bold uppercase tracking-wide">8+ Tahun</p>
                     </div>
                 </div>
                 <p class="text-gold-400 text-[10px] uppercase tracking-[0.3em] mb-2 mt-2">✦ Wedding Planner & Founder ✦</p>
