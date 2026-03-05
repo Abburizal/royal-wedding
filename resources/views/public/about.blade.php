@@ -22,7 +22,7 @@
             <div class="flex flex-col items-center text-center">
                 <div class="relative mb-6">
                     <div class="w-44 h-44 rounded-full overflow-hidden ring-4 ring-gold-500 ring-offset-4 ring-offset-gray-900">
-                        <img src="https://images.unsplash.com/photo-1556157382-97eda2d62296?w=400&q=80"
+                        <img src="/images/arifin.jpg"
                              alt="Dr. Arifin Amiruddin" class="w-full h-full object-cover">
                     </div>
                     <div class="absolute -bottom-3 left-1/2 -translate-x-1/2 bg-gold-500 text-white rounded-full px-4 py-1 shadow-luxury whitespace-nowrap">
@@ -45,7 +45,7 @@
             <div class="flex flex-col items-center text-center">
                 <div class="relative mb-6">
                     <div class="w-44 h-44 rounded-full overflow-hidden ring-4 ring-gold-500 ring-offset-4 ring-offset-gray-900">
-                        <img src="https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?w=400&q=80"
+                        <img src="/images/ully.jpg"
                              alt="Ully Sjah" class="w-full h-full object-cover">
                     </div>
                     <div class="absolute -bottom-3 left-1/2 -translate-x-1/2 bg-gold-500 text-white rounded-full px-4 py-1 shadow-luxury whitespace-nowrap">
