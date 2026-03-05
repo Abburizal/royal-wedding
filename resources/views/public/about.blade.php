@@ -21,7 +21,7 @@
             {{-- Owner 1: Dr. Arifin Amiruddin --}}
             <div class="flex flex-col items-center text-center">
                 <div class="relative mb-6">
-                    <div class="w-28 h-28 rounded-full overflow-hidden ring-4 ring-gold-500 ring-offset-4 ring-offset-gray-900">
+                    <div class="w-20 h-20 rounded-full overflow-hidden ring-2 ring-gold-500 ring-offset-2 ring-offset-gray-900">
                         <img src="/images/arifin.jpg"
                              alt="Dr. Arifin Amiruddin" class="w-full h-full object-cover object-top">
                     </div>
@@ -44,7 +44,7 @@
             {{-- Owner 2: Ully Sjah --}}
             <div class="flex flex-col items-center text-center">
                 <div class="relative mb-6">
-                    <div class="w-28 h-28 rounded-full overflow-hidden ring-4 ring-gold-500 ring-offset-4 ring-offset-gray-900">
+                    <div class="w-20 h-20 rounded-full overflow-hidden ring-2 ring-gold-500 ring-offset-2 ring-offset-gray-900">
                         <img src="/images/ully.jpg"
                              alt="Ully Sjah" class="w-full h-full object-cover object-top">
                     </div>
