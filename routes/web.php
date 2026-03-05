@@ -15,6 +15,8 @@ use App\Http\Controllers\Client\TimelineController as ClientTimeline;
 use App\Http\Controllers\Client\MoodboardController as ClientMoodboard;
 use App\Http\Controllers\Client\MessageController as ClientMessage;
 use App\Http\Controllers\Client\ContractController as ClientContract;
+use App\Http\Controllers\Client\GuestController as ClientGuest;
+use App\Http\Controllers\Client\BudgetController as ClientBudget;
 use App\Http\Controllers\Admin\DashboardController as AdminDashboard;
 use App\Http\Controllers\Admin\UserController;
 use App\Http\Controllers\Admin\WeddingController;
@@ -79,7 +81,23 @@ Route::prefix('my-wedding')->name('client.')->middleware(['auth', 'role:client']
 
     // Contract sign
     Route::post('/contracts/{contract}/sign', [ClientContract::class, 'sign'])->name('contracts.sign');
+
+    // Guest List & RSVP
+    Route::get('/guests', [ClientGuest::class, 'index'])->name('guests.index');
+    Route::post('/guests', [ClientGuest::class, 'store'])->name('guests.store');
+    Route::patch('/guests/{guest}', [ClientGuest::class, 'update'])->name('guests.update');
+    Route::delete('/guests/{guest}', [ClientGuest::class, 'destroy'])->name('guests.destroy');
+
+    // Budget Tracker
+    Route::get('/budget', [ClientBudget::class, 'index'])->name('budget.index');
+    Route::post('/budget', [ClientBudget::class, 'store'])->name('budget.store');
+    Route::patch('/budget/{budget}', [ClientBudget::class, 'update'])->name('budget.update');
+    Route::delete('/budget/{budget}', [ClientBudget::class, 'destroy'])->name('budget.destroy');
 });
+
+// Public RSVP (no auth needed)
+Route::get('/rsvp/{token}', [ClientGuest::class, 'rsvpShow'])->name('rsvp.show');
+Route::post('/rsvp/{token}', [ClientGuest::class, 'rsvpSubmit'])->name('rsvp.submit');
 
 // ─── ADMIN ROUTES ──────────────────────────────────────────────────────────────
 Route::prefix('admin')->name('admin.')->middleware(['auth', 'role:super_admin,wedding_planner,finance'])->group(function () {

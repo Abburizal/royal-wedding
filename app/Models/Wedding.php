@@ -35,6 +35,8 @@ class Wedding extends Model
     public function notes()             { return $this->hasMany(WeddingNote::class)->latest(); }
     public function messages()          { return $this->hasMany(WeddingMessage::class)->latest(); }
     public function contracts()         { return $this->hasMany(WeddingContract::class)->latest(); }
+    public function guests()            { return $this->hasMany(Guest::class); }
+    public function budgetItems()       { return $this->hasMany(WeddingBudget::class); }
 
     public function getDaysUntilWeddingAttribute(): int
     {

@@ -1,10 +1,12 @@
 @php
     $clientLinks = [
-        ['route' => 'client.dashboard',       'icon' => '◈', 'label' => 'Dashboard'],
-        ['route' => 'client.payments.index',  'icon' => '◎', 'label' => 'Pembayaran'],
-        ['route' => 'client.checklist.index', 'icon' => '◉', 'label' => 'Checklist'],
+        ['route' => 'client.dashboard',       'icon' => '◈',  'label' => 'Dashboard'],
+        ['route' => 'client.payments.index',  'icon' => '◎',  'label' => 'Pembayaran'],
+        ['route' => 'client.checklist.index', 'icon' => '◉',  'label' => 'Checklist'],
         ['route' => 'client.timeline.index',  'icon' => '📅', 'label' => 'Timeline'],
         ['route' => 'client.moodboard.index', 'icon' => '🎨', 'label' => 'Moodboard'],
+        ['route' => 'client.guests.index',    'icon' => '👥', 'label' => 'Daftar Tamu'],
+        ['route' => 'client.budget.index',    'icon' => '💰', 'label' => 'Budget Tracker'],
     ];
 @endphp
 @foreach($clientLinks as $link)
