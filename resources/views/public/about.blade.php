@@ -21,7 +21,7 @@
             {{-- Owner 1: Dr. Arifin Amiruddin --}}
             <div class="flex flex-col md:flex-row items-center gap-10">
                 {{-- Photo --}}
-                <div class="flex-shrink-0 w-[180px] sm:w-[200px] md:w-[220px] lg:w-[260px] overflow-hidden rounded-2xl shadow-2xl">
+                <div class="flex-shrink-0 w-[140px] sm:w-[160px] md:w-[180px] lg:w-[200px] overflow-hidden rounded-2xl shadow-2xl">
                     <img src="/images/arifin.jpg"
                          alt="Dr. Arifin Amiruddin"
                          class="w-full aspect-[4/5] object-cover object-top">
@@ -47,7 +47,7 @@
             {{-- Owner 2: Ully Sjah --}}
             <div class="flex flex-col md:flex-row-reverse items-center gap-10">
                 {{-- Photo --}}
-                <div class="flex-shrink-0 w-[180px] sm:w-[200px] md:w-[220px] lg:w-[260px] overflow-hidden rounded-2xl shadow-2xl">
+                <div class="flex-shrink-0 w-[140px] sm:w-[160px] md:w-[180px] lg:w-[200px] overflow-hidden rounded-2xl shadow-2xl">
                     <img src="/images/ully.jpg"
                          alt="Ully Sjah"
                          class="w-full aspect-[4/5] object-cover object-top">
