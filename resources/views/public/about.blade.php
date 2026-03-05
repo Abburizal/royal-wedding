@@ -19,7 +19,7 @@
         <div class="grid md:grid-cols-2 gap-10 lg:gap-16">
 
             {{-- Owner 1: Dr. Arifin Amiruddin --}}
-            <div class="bg-white/5 backdrop-blur-sm border border-gold-500/20 rounded-3xl p-8 flex flex-col items-center text-center hover:border-gold-500/50 transition-all">
+            <div class="flex flex-col items-center text-center">
                 <div class="relative mb-6">
                     <div class="w-44 h-44 rounded-full overflow-hidden ring-4 ring-gold-500 ring-offset-4 ring-offset-gray-900">
                         <img src="https://images.unsplash.com/photo-1556157382-97eda2d62296?w=400&q=80"
@@ -42,7 +42,7 @@
             </div>
 
             {{-- Owner 2: Ully Sjah --}}
-            <div class="bg-white/5 backdrop-blur-sm border border-gold-500/20 rounded-3xl p-8 flex flex-col items-center text-center hover:border-gold-500/50 transition-all">
+            <div class="flex flex-col items-center text-center">
                 <div class="relative mb-6">
                     <div class="w-44 h-44 rounded-full overflow-hidden ring-4 ring-gold-500 ring-offset-4 ring-offset-gray-900">
                         <img src="https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?w=400&q=80"
