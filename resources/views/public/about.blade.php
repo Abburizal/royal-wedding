@@ -23,7 +23,7 @@
                 <div class="flex-shrink-0">
                     <img src="/images/arifin.jpg"
                          alt="Dr. Arifin Amiruddin"
-                         class="w-16 h-16 rounded-full object-cover object-top ring-2 ring-gold-500">
+                         class="w-24 h-24 rounded-full object-cover object-top ring-2 ring-gold-500">
                 </div>
                 <div class="flex-1 min-w-0">
                     <p class="text-gold-400 text-[10px] uppercase tracking-widest mb-1">Owner & Director</p>
@@ -44,7 +44,7 @@
                 <div class="flex-shrink-0">
                     <img src="/images/ully.jpg"
                          alt="Ully Sjah"
-                         class="w-16 h-16 rounded-full object-cover object-top ring-2 ring-gold-500">
+                         class="w-24 h-24 rounded-full object-cover object-top ring-2 ring-gold-500">
                 </div>
                 <div class="flex-1 min-w-0">
                     <p class="text-gold-400 text-[10px] uppercase tracking-widest mb-1">Wedding Planner & Founder</p>
