@@ -16,52 +16,42 @@
         </div>
 
         {{-- Two owners --}}
-        <div class="grid md:grid-cols-2 gap-10 lg:gap-16">
+        <div style="display:flex; flex-wrap:wrap; gap:48px; justify-content:center; max-width:900px; margin:0 auto;">
 
             {{-- Owner 1: Dr. Arifin Amiruddin --}}
-            <div class="flex flex-col items-center text-center">
-                <div class="relative mb-6">
-                    <div class="w-20 h-20 rounded-full overflow-hidden ring-2 ring-gold-500 ring-offset-2 ring-offset-gray-900">
-                        <img src="/images/arifin.jpg"
-                             alt="Dr. Arifin Amiruddin" class="w-full h-full object-cover object-top">
-                    </div>
-                    <div class="absolute -bottom-2 left-1/2 -translate-x-1/2 bg-gold-500 text-white rounded-full px-2.5 py-0.5 shadow-luxury whitespace-nowrap">
-                        <p class="text-[9px] font-bold uppercase tracking-wide">Co-Founder</p>
-                    </div>
-                </div>
-                <p class="text-gold-400 text-[10px] uppercase tracking-[0.3em] mb-2 mt-2">✦ Owner & Director ✦</p>
-                <h2 class="font-serif text-3xl text-white font-bold mb-3">Dr. Arifin Amiruddin</h2>
-                <p class="text-gray-300 text-sm leading-relaxed mb-5">
+            <div style="flex:1; min-width:280px; max-width:380px; display:flex; flex-direction:column; align-items:center; text-align:center;">
+                <img src="/images/arifin.jpg"
+                     alt="Dr. Arifin Amiruddin"
+                     style="width:120px; height:120px; border-radius:50%; object-fit:cover; object-position:top; border:3px solid #C6A75E; margin-bottom:16px; flex-shrink:0;">
+                <p style="color:#C6A75E; font-size:10px; letter-spacing:0.25em; text-transform:uppercase; margin-bottom:6px;">✦ Owner & Director ✦</p>
+                <h2 class="font-serif" style="color:white; font-size:1.5rem; font-weight:700; margin-bottom:12px;">Dr. Arifin Amiruddin</h2>
+                <p style="color:#d1d5db; font-size:0.875rem; line-height:1.6; margin-bottom:16px;">
                     Visioner di balik konsep luxury wedding Indonesia. Dengan latar belakang manajemen bisnis dan passion mendalam terhadap seni, beliau membangun pondasi The Royal Wedding sebagai standar tertinggi industri pernikahan premium.
                 </p>
-                <div class="flex flex-wrap justify-center gap-2">
-                    <span class="px-3 py-1 bg-gold-500/20 text-gold-400 rounded-full text-xs border border-gold-500/30">✦ Business Strategy</span>
-                    <span class="px-3 py-1 bg-gold-500/20 text-gold-400 rounded-full text-xs border border-gold-500/30">✦ Luxury Concepts</span>
-                    <span class="px-3 py-1 bg-gold-500/20 text-gold-400 rounded-full text-xs border border-gold-500/30">✦ Brand Vision</span>
+                <div style="display:flex; flex-wrap:wrap; justify-content:center; gap:8px;">
+                    <span style="padding:4px 12px; background:rgba(198,167,94,0.15); color:#C6A75E; border:1px solid rgba(198,167,94,0.3); border-radius:9999px; font-size:11px;">Business Strategy</span>
+                    <span style="padding:4px 12px; background:rgba(198,167,94,0.15); color:#C6A75E; border:1px solid rgba(198,167,94,0.3); border-radius:9999px; font-size:11px;">Luxury Concepts</span>
+                    <span style="padding:4px 12px; background:rgba(198,167,94,0.15); color:#C6A75E; border:1px solid rgba(198,167,94,0.3); border-radius:9999px; font-size:11px;">Brand Vision</span>
                 </div>
             </div>
 
+            {{-- Divider vertical --}}
+            <div style="width:1px; background:rgba(255,255,255,0.1); align-self:stretch; display:none;" class="md-divider"></div>
+
             {{-- Owner 2: Ully Sjah --}}
-            <div class="flex flex-col items-center text-center">
-                <div class="relative mb-6">
-                    <div class="w-20 h-20 rounded-full overflow-hidden ring-2 ring-gold-500 ring-offset-2 ring-offset-gray-900">
-                        <img src="/images/ully.jpg"
-                             alt="Ully Sjah" class="w-full h-full object-cover object-top">
-                    </div>
-                    <div class="absolute -bottom-2 left-1/2 -translate-x-1/2 bg-gold-500 text-white rounded-full px-2.5 py-0.5 shadow-luxury whitespace-nowrap">
-                        <p class="text-[9px] font-bold uppercase tracking-wide">8+ Tahun</p>
-                    </div>
-                </div>
-                <p class="text-gold-400 text-[10px] uppercase tracking-[0.3em] mb-2 mt-2">✦ Wedding Planner & Founder ✦</p>
-                <h2 class="font-serif text-3xl text-white font-bold mb-3">Ully Sjah</h2>
-                <p class="text-gray-300 text-sm leading-relaxed mb-5">
-                    Dengan lebih dari 8 tahun pengalaman di industri pernikahan premium Indonesia, Ully telah membantu lebih dari 500 pasangan mewujudkan hari paling istimewa dalam hidup mereka. Dari pernikahan intimate hingga grand ballroom 1000 tamu — setiap detail adalah prioritas.
+            <div style="flex:1; min-width:280px; max-width:380px; display:flex; flex-direction:column; align-items:center; text-align:center;">
+                <img src="/images/ully.jpg"
+                     alt="Ully Sjah"
+                     style="width:120px; height:120px; border-radius:50%; object-fit:cover; object-position:top; border:3px solid #C6A75E; margin-bottom:16px; flex-shrink:0;">
+                <p style="color:#C6A75E; font-size:10px; letter-spacing:0.25em; text-transform:uppercase; margin-bottom:6px;">✦ Wedding Planner & Founder ✦</p>
+                <h2 class="font-serif" style="color:white; font-size:1.5rem; font-weight:700; margin-bottom:12px;">Ully Sjah</h2>
+                <p style="color:#d1d5db; font-size:0.875rem; line-height:1.6; margin-bottom:16px;">
+                    Dengan lebih dari 8 tahun pengalaman di industri pernikahan premium Indonesia, Ully telah membantu lebih dari 500 pasangan mewujudkan hari paling istimewa dalam hidup mereka.
                 </p>
-                <div class="flex flex-wrap justify-center gap-2">
-                    <span class="px-3 py-1 bg-gold-500/20 text-gold-400 rounded-full text-xs border border-gold-500/30">✦ Wedding Planning</span>
-                    <span class="px-3 py-1 bg-gold-500/20 text-gold-400 rounded-full text-xs border border-gold-500/30">✦ Event Design</span>
-                    <span class="px-3 py-1 bg-gold-500/20 text-gold-400 rounded-full text-xs border border-gold-500/30">✦ Vendor Curation</span>
-                    <span class="px-3 py-1 bg-gold-500/20 text-gold-400 rounded-full text-xs border border-gold-500/30">✦ Luxury Events</span>
+                <div style="display:flex; flex-wrap:wrap; justify-content:center; gap:8px;">
+                    <span style="padding:4px 12px; background:rgba(198,167,94,0.15); color:#C6A75E; border:1px solid rgba(198,167,94,0.3); border-radius:9999px; font-size:11px;">Wedding Planning</span>
+                    <span style="padding:4px 12px; background:rgba(198,167,94,0.15); color:#C6A75E; border:1px solid rgba(198,167,94,0.3); border-radius:9999px; font-size:11px;">Event Design</span>
+                    <span style="padding:4px 12px; background:rgba(198,167,94,0.15); color:#C6A75E; border:1px solid rgba(198,167,94,0.3); border-radius:9999px; font-size:11px;">Luxury Events</span>
                 </div>
             </div>
 
