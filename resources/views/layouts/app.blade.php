@@ -49,6 +49,7 @@
                     <a href="{{ route('home') }}" class="text-sm {{ request()->routeIs('home') ? 'text-gold-600 font-semibold' : 'text-gray-600 hover:text-gold-600' }} transition-colors">Beranda</a>
                     <a href="{{ route('portfolio.index') }}" class="text-sm {{ request()->routeIs('portfolio*') ? 'text-gold-600 font-semibold' : 'text-gray-600 hover:text-gold-600' }} transition-colors">Portfolio</a>
                     <a href="{{ route('packages.index') }}" class="text-sm {{ request()->routeIs('packages*') ? 'text-gold-600 font-semibold' : 'text-gray-600 hover:text-gold-600' }} transition-colors">Paket</a>
+                    <a href="{{ route('vendors.index') }}" class="text-sm {{ request()->routeIs('vendors*') ? 'text-gold-600 font-semibold' : 'text-gray-600 hover:text-gold-600' }} transition-colors">Vendor</a>
                     <a href="{{ route('testimonials.index') }}" class="text-sm {{ request()->routeIs('testimonials*') ? 'text-gold-600 font-semibold' : 'text-gray-600 hover:text-gold-600' }} transition-colors">Testimoni</a>
                     <a href="{{ route('about') }}" class="text-sm {{ request()->routeIs('about') ? 'text-gold-600 font-semibold' : 'text-gray-600 hover:text-gold-600' }} transition-colors">Tentang</a>
                     <a href="{{ route('booking.create') }}" class="text-sm {{ request()->routeIs('booking*') ? 'text-gold-600 font-semibold' : 'text-gray-600 hover:text-gold-600' }} transition-colors">Konsultasi</a>

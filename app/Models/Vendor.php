@@ -22,6 +22,18 @@ class Vendor extends Model
 
     public function vendorAssignments() { return $this->hasMany(VendorAssignment::class); }
     public function weddings()          { return $this->belongsToMany(Wedding::class, 'vendor_assignments')->withPivot('category','agreed_price','status','notes'); }
+    public function reviews()           { return $this->hasMany(VendorReview::class)->where('is_published', true); }
+    public function allReviews()        { return $this->hasMany(VendorReview::class); }
+
+    public function getAvgRatingAttribute(): float
+    {
+        return round($this->reviews()->avg('rating') ?? 0, 1);
+    }
+
+    public function getReviewCountAttribute(): int
+    {
+        return $this->reviews()->count();
+    }
 
     public function getCategoryLabelAttribute(): string
     {

@@ -1,6 +1,7 @@
 @php
     $adminLinks = [
         ['route' => 'admin.dashboard',           'icon' => '◈',  'label' => 'Dashboard'],
+        ['route' => 'admin.calendar',             'icon' => '📅', 'label' => 'Kalender'],
         ['route' => 'admin.weddings.index',       'icon' => '♡',  'label' => 'Wedding'],
         ['route' => 'admin.consultations.index',  'icon' => '💬', 'label' => 'Konsultasi'],
         ['route' => 'admin.users.index',          'icon' => '◉',  'label' => 'Pengguna'],

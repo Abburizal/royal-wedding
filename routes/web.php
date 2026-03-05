@@ -33,6 +33,8 @@ use App\Http\Controllers\Admin\ConsultationController;
 use App\Http\Controllers\Admin\SettingController;
 use App\Http\Controllers\Admin\ContractController;
 use App\Http\Controllers\Admin\MessageController as AdminMessage;
+use App\Http\Controllers\Admin\CalendarController;
+use App\Http\Controllers\Public\VendorController as PublicVendorController;
 
 // ─── PROFILE ROUTES ────────────────────────────────────────────────────────────
 Route::middleware('auth')->group(function () {
@@ -51,6 +53,11 @@ Route::get('/portfolio', [PortfolioController::class, 'index'])->name('portfolio
 Route::get('/portfolio/{portfolio}', [PortfolioController::class, 'show'])->name('portfolio.show');
 Route::get('/testimonials', [TestimonialController::class, 'index'])->name('testimonials.index');
 Route::get('/about', [AboutController::class, 'index'])->name('about');
+
+// Vendor Marketplace (public)
+Route::get('/vendors', [PublicVendorController::class, 'index'])->name('vendors.index');
+Route::get('/vendors/{vendor}', [PublicVendorController::class, 'show'])->name('vendors.show');
+Route::post('/vendors/{vendor}/reviews', [PublicVendorController::class, 'storeReview'])->name('vendors.reviews.store')->middleware('auth');
 
 // ─── AUTH ROUTES (Breeze) ───────────────────────────────────────────────────────
 require __DIR__.'/auth.php';
@@ -102,12 +109,23 @@ Route::post('/rsvp/{token}', [ClientGuest::class, 'rsvpSubmit'])->name('rsvp.sub
 // ─── ADMIN ROUTES ──────────────────────────────────────────────────────────────
 Route::prefix('admin')->name('admin.')->middleware(['auth', 'role:super_admin,wedding_planner,finance'])->group(function () {
     Route::get('/dashboard', [AdminDashboard::class, 'index'])->name('dashboard');
+    Route::get('/calendar', [CalendarController::class, 'index'])->name('calendar');
 
     Route::resource('users', UserController::class);
     Route::resource('weddings', WeddingController::class);
     Route::resource('packages', AdminPackageController::class);
     Route::resource('payments', AdminPaymentController::class)->only(['index','show','update']);
     Route::resource('vendors', VendorController::class);
+
+    // Vendor review moderation
+    Route::patch('vendor-reviews/{review}/publish', function(\App\Models\VendorReview $review) {
+        $review->update(['is_published' => !$review->is_published]);
+        return back()->with('success', 'Status review diperbarui.');
+    })->name('vendor-reviews.publish');
+    Route::delete('vendor-reviews/{review}', function(\App\Models\VendorReview $review) {
+        $review->delete();
+        return back()->with('success', 'Review dihapus.');
+    })->name('vendor-reviews.destroy');
 
     // Payment verification (finance only)
     Route::post('payments/{payment}/verify', [AdminPaymentController::class, 'verify'])
