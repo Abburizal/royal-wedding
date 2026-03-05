@@ -21,9 +21,9 @@
             {{-- Owner 1: Dr. Arifin Amiruddin --}}
             <div class="flex flex-col items-center text-center">
                 <div class="relative mb-6">
-                    <div class="w-44 h-44 rounded-full overflow-hidden ring-4 ring-gold-500 ring-offset-4 ring-offset-gray-900">
+                    <div class="w-28 h-28 rounded-full overflow-hidden ring-4 ring-gold-500 ring-offset-4 ring-offset-gray-900">
                         <img src="/images/arifin.jpg"
-                             alt="Dr. Arifin Amiruddin" class="w-full h-full object-cover">
+                             alt="Dr. Arifin Amiruddin" class="w-full h-full object-cover object-top">
                     </div>
                     <div class="absolute -bottom-3 left-1/2 -translate-x-1/2 bg-gold-500 text-white rounded-full px-4 py-1 shadow-luxury whitespace-nowrap">
                         <p class="text-[10px] font-bold uppercase tracking-wider">Co-Founder</p>
@@ -44,9 +44,9 @@
             {{-- Owner 2: Ully Sjah --}}
             <div class="flex flex-col items-center text-center">
                 <div class="relative mb-6">
-                    <div class="w-44 h-44 rounded-full overflow-hidden ring-4 ring-gold-500 ring-offset-4 ring-offset-gray-900">
+                    <div class="w-28 h-28 rounded-full overflow-hidden ring-4 ring-gold-500 ring-offset-4 ring-offset-gray-900">
                         <img src="/images/ully.jpg"
-                             alt="Ully Sjah" class="w-full h-full object-cover">
+                             alt="Ully Sjah" class="w-full h-full object-cover object-top">
                     </div>
                     <div class="absolute -bottom-3 left-1/2 -translate-x-1/2 bg-gold-500 text-white rounded-full px-4 py-1 shadow-luxury whitespace-nowrap">
                         <p class="text-[10px] font-bold uppercase tracking-wider">8+ Tahun</p>
