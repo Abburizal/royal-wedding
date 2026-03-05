@@ -1,0 +1,96 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    body {
+        font-family: 'Inter', sans-serif;
+        background-color: #FAFAF7;
+    }
+    h1, h2, h3, .font-serif {
+        font-family: 'Playfair Display', serif;
+    }
+}
+
+@layer components {
+    .btn-gold {
+        @apply bg-gold-500 hover:bg-gold-600 text-white font-semibold py-3 px-6 rounded-xl transition-all shadow-luxury hover:shadow-luxury-lg;
+    }
+    .card-luxury {
+        @apply bg-white rounded-2xl shadow-card border border-gold-100 p-6;
+    }
+    .badge-gold {
+        @apply inline-block px-2.5 py-0.5 bg-gold-100 text-gold-700 text-xs rounded-full font-medium;
+    }
+}
+
+/* ─── LOGO STYLES ─────────────────────────────────────────────────────────── */
+
+/* Navbar logo — light background */
+.site-logo {
+    height: 36px;
+    max-width: 36px;       /* crop to icon-only bounding box */
+    width: 36px;
+    object-fit: cover;
+    object-position: center top; /* show the crown/ornament, not the text */
+    border-radius: 50%;
+    image-rendering: -webkit-optimize-contrast;
+}
+
+@media (max-width: 767px) {
+    .site-logo {
+        height: 30px;
+        width: 30px;
+        max-width: 30px;
+    }
+}
+
+/* Dashboard sidebar logo */
+.site-logo-sidebar {
+    height: 32px;
+    width: 32px;
+    max-width: 32px;
+    object-fit: cover;
+    object-position: center top;
+    border-radius: 50%;
+    image-rendering: -webkit-optimize-contrast;
+}
+
+/* Footer logo */
+.site-logo-footer {
+    height: 64px;
+    width: 64px;
+    max-width: 64px;
+    object-fit: cover;
+    object-position: center top;
+    border-radius: 50%;
+    image-rendering: -webkit-optimize-contrast;
+}
+
+/* Hover effect — elegant scale + brightness */
+.site-logo-link {
+    display: inline-flex;
+    align-items: center;
+    transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1),
+                filter 0.3s ease;
+    will-change: transform;
+}
+
+.site-logo-link:hover {
+    transform: scale(1.04);
+    filter: brightness(1.08) drop-shadow(0 2px 8px rgba(212, 175, 55, 0.4));
+}
+
+.site-logo-link:active {
+    transform: scale(0.98);
+    transition-duration: 0.1s;
+}
+
+/* High-DPI / Retina: ensure PNG is rendered sharp */
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    .site-logo,
+    .site-logo-sidebar,
+    .site-logo-footer {
+        image-rendering: auto; /* let browser handle HiDPI upscaling */
+    }
+}
