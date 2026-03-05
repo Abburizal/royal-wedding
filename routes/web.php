@@ -84,6 +84,8 @@ Route::prefix('my-wedding')->name('client.')->middleware(['auth', 'role:client']
     Route::delete('/moodboard/{moodboard}', [ClientMoodboard::class, 'destroy'])->name('moodboard.destroy');
 
     // Messages
+    Route::get('/chat', [ClientMessage::class, 'index'])->name('chat');
+    Route::get('/messages/fetch', [ClientMessage::class, 'fetch'])->name('messages.fetch');
     Route::post('/messages', [ClientMessage::class, 'store'])->name('messages.store');
 
     // Contract sign
@@ -174,6 +176,7 @@ Route::prefix('admin')->name('admin.')->middleware(['auth', 'role:super_admin,we
 
     // Wedding Messages
     Route::post('weddings/{wedding}/messages', [AdminMessage::class, 'store'])->name('wedding-messages.store');
+    Route::get('weddings/{wedding}/messages/fetch', [AdminMessage::class, 'fetch'])->name('wedding-messages.fetch');
     Route::post('weddings/{wedding}/messages/read', [AdminMessage::class, 'markRead'])->name('wedding-messages.read');
 
     // Notifications

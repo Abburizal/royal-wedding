@@ -7,6 +7,7 @@
         ['route' => 'client.moodboard.index', 'icon' => '🎨', 'label' => 'Moodboard'],
         ['route' => 'client.guests.index',    'icon' => '👥', 'label' => 'Daftar Tamu'],
         ['route' => 'client.budget.index',    'icon' => '💰', 'label' => 'Budget Tracker'],
+        ['route' => 'client.chat',            'icon' => '💬', 'label' => 'Live Chat'],
     ];
 @endphp
 @foreach($clientLinks as $link)
