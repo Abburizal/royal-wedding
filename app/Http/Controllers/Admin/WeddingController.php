@@ -3,6 +3,8 @@
 namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
+use App\Http\Requests\StoreWeddingRequest;
+use App\Http\Requests\UpdateWeddingRequest;
 use App\Models\ActivityLog;
 use App\Models\Wedding;
 use App\Models\User;
@@ -28,23 +30,9 @@ class WeddingController extends Controller
         return view('admin.weddings.create', compact('clients', 'planners', 'packages'));
     }
 
-    public function store(Request $request)
+    public function store(StoreWeddingRequest $request)
     {
-        $validated = $request->validate([
-            'client_id'        => 'required|exists:users,id',
-            'planner_id'       => 'nullable|exists:users,id',
-            'package_id'       => 'required|exists:packages,id',
-            'groom_name'       => 'required|string|max:100',
-            'bride_name'       => 'required|string|max:100',
-            'wedding_date'     => 'required|date|after:today',
-            'venue_name'       => 'nullable|string|max:200',
-            'venue_address'    => 'nullable|string',
-            'venue_city'       => 'nullable|string|max:100',
-            'estimated_guests' => 'nullable|integer|min:0',
-            'total_price'      => 'required|numeric|min:0',
-            'special_notes'    => 'nullable|string',
-        ]);
-
+        $validated = $request->validated();
         $validated['status'] = 'confirmed';
         $wedding = $this->weddingService->create($validated);
         ActivityLog::record('created', 'Membuat wedding baru: ' . $wedding->couple_name, $wedding);
@@ -67,22 +55,9 @@ class WeddingController extends Controller
         return view('admin.weddings.edit', compact('wedding', 'clients', 'planners', 'packages'));
     }
 
-    public function update(Request $request, Wedding $wedding)
+    public function update(UpdateWeddingRequest $request, Wedding $wedding)
     {
-        $validated = $request->validate([
-            'status'           => 'required|in:inquired,confirmed,in_progress,completed,cancelled',
-            'planner_id'       => 'nullable|exists:users,id',
-            'groom_name'       => 'required|string|max:100',
-            'bride_name'       => 'required|string|max:100',
-            'wedding_date'     => 'required|date',
-            'venue_name'       => 'nullable|string|max:200',
-            'venue_address'    => 'nullable|string',
-            'venue_city'       => 'nullable|string|max:100',
-            'special_notes'    => 'nullable|string',
-            'estimated_guests' => 'nullable|integer|min:0',
-        ]);
-
-        $wedding->update($validated);
+        $wedding->update($request->validated());
         ActivityLog::record('updated', 'Memperbarui data wedding: ' . $wedding->couple_name, $wedding);
         return redirect()->route('admin.weddings.show', $wedding)->with('success', 'Data wedding diperbarui.');
     }

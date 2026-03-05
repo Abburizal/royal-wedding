@@ -14,6 +14,7 @@ use App\Http\Controllers\Client\ChecklistController as ClientChecklist;
 use App\Http\Controllers\Client\TimelineController as ClientTimeline;
 use App\Http\Controllers\Client\MoodboardController as ClientMoodboard;
 use App\Http\Controllers\Client\MessageController as ClientMessage;
+use App\Http\Controllers\Client\ContractController as ClientContract;
 use App\Http\Controllers\Admin\DashboardController as AdminDashboard;
 use App\Http\Controllers\Admin\UserController;
 use App\Http\Controllers\Admin\WeddingController;
@@ -77,17 +78,7 @@ Route::prefix('my-wedding')->name('client.')->middleware(['auth', 'role:client']
     Route::post('/messages', [ClientMessage::class, 'store'])->name('messages.store');
 
     // Contract sign
-    Route::post('/contracts/{contract}/sign', function (\App\Models\WeddingContract $contract) {
-        if ($contract->status === 'sent') {
-            $contract->update([
-                'status'      => 'signed',
-                'signed_name' => auth()->user()->name,
-                'signed_ip'   => request()->ip(),
-                'signed_at'   => now(),
-            ]);
-        }
-        return back()->with('success', 'Kontrak berhasil ditandatangani secara digital.');
-    })->name('contracts.sign');
+    Route::post('/contracts/{contract}/sign', [ClientContract::class, 'sign'])->name('contracts.sign');
 });
 
 // ─── ADMIN ROUTES ──────────────────────────────────────────────────────────────
